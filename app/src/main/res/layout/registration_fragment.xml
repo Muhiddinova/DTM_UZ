@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.dtmuz.ui.firstActivityFragment.login.RegistrationViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/books_bg"
+        tools:context=".ui.firstActivityFragment.login.RegistrationFragment">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#94000000"
+
+            />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_google"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <EditText
+            android:id="@+id/editNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_number_text_shape"
+            android:drawableStart="@drawable/ic_phone"
+            android:elevation="0dp"
+            android:importantForAutofill="no"
+            android:inputType="textPhonetic"
+            android:visibility="visible"
+            android:minHeight="50dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#B6B2B2"
+            android:textColorHint="#fff"
+            app:layout_constraintBottom_toTopOf="@id/signInBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/smsCode"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:hint="______"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="#B6B2B2"
+            android:textColorHint="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/purple_500"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="false"
+            app:itemCount="6"
+            app:itemHeight="42dp"
+            app:itemRadius="12dp"
+            app:itemSpacing="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/signInBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgLogo"
+            android:visibility="gone"
+            app:viewType="rectangle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:onClick="@{viewModel.onSignInButtonClicked}"
+            android:id="@+id/signInBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_number_text_shape"
+            android:text="SIGN IN"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/smsCode" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

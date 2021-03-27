@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "461679001932",
+    "project_id": "dtmuz-eeabb",
+    "storage_bucket": "dtmuz-eeabb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461679001932:android:296df46f39c37c3a0b8fe9",
+        "android_client_info": {
+          "package_name": "com.example.dtmuz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461679001932-h506igaaeqit6ml4q7fhjic3lc11lf3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBemEsnnE4gsco2ujmgL22DlfSTG-dsGow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461679001932-h506igaaeqit6ml4q7fhjic3lc11lf3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

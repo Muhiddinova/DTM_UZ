@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.dtmuz.ui.firstActivityFragment.login.RegistrationFragment"
+        tools:layout="@layout/registration_fragment"
+        android:label="RegistrationFragment" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.dtmuz.ui.firstActivityFragment.user.UserFragment"
+        android:label="user_fragment"
+        tools:layout="@layout/user_fragment" />
+    <activity
+        android:id="@+id/firstActivity"
+        android:name="com.example.dtmuz.ui.activity.FirstActivity"
+        android:label="activity_registration"
+        tools:layout="@layout/activity_registration" />
+
+    <activity
+        android:id="@+id/secondActivity"
+        android:name="com.example.dtmuz.ui.activity.SecondActivity"
+        android:label="SecondActivity" />
+    <fragment
+        android:id="@+id/splashFragment"
+        tools:layout="@layout/fragment_splash"
+        android:name="com.example.dtmuz.ui.firstActivityFragment.splash.SplashFragment"
+        android:label="SplashFragment" />
+</navigation>
